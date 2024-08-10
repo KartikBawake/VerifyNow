@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+body{
+  height: 100%;
+  width: 100%;
+  background-color: #e4e2e2;
+  background-image: url(./images/web_bac.png);
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+  background: #373131;
+  height: 559px;
+  width: 60%;
+  margin: 55px auto;
+  border-radius: 18px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.background_image{
+  width: 100%;
+  height: 100%; 
+  background-size: cover;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.upper_area{
+  height: 65px;
+  width: 100%;
+  background-color: #373131;
+  display: flex;
+  flex-direction: row;
+  border-radius: 18px 18px 0px 0px;
+  gap: 8px;
+}
+
+.search_area_div{
+  height: 100%;
+  width: 90%;
+}
+
+.search_area{
+  height: 75%;
+  width: 100%;
+  background-color: white;
+  margin: 9px 0px 9px 9px;
+  border-radius: 15px;
+}
+
+.search_btn_div{
+  height: 100%;
+  width: 7%;
+}
+
+.search_btn{
+  font-family: monospace;
+  font-weight: bold;
+  height: 75%;
+  width:67px;
+  background-color: #ff3131;
+  margin: 9px 0px 9px 9px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s ease-in-out;
+}
+
+.search_btn:hover{
+  background-color: #b32020;
+  color: white;
+}
+
+.content_area{
+  width: 100%;
+  height: 100%;
+  background-color: #373131;
+  border-radius: 0px 0px 15px 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.main_content_area{
+  width: 70%;
+  height: 550px;
+  background: #373131;
+  border-radius: 18px;
+  margin-left: 9px;
+}
+
+.main_content{
+  width: 100%;
+  height: 100%;
+}
+
+.main_content_divider_1{
+  height: 25%;
+  width: 100%;
+  background-color: #373131;
+  display: flex;
+  gap: 9px;
+}
+
+.box_1 {
+  height: 100%;
+  width: 50%;
+  border-radius: 18px 18px 0px 0px;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
+  padding: 10px;
+  font-family: monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.text-item {
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.small {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.large {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.main_content_divider_2{
+  height: 25%;
+  width: 100%;
+  background-color: #373131;
+  display: flex;
+  gap: 9px;
+}
+
+.box_2{
+  height: 100%;
+  width: 50%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+}
+
+.main_content_divider_3{
+  height: 25%;
+  width: 100%;
+  background-color: #373131;
+  display: flex;
+  gap: 9px;
+}
+
+.box_3{
+  height: 100%;
+  width: 50%;
+  border-radius: 0px 0px 18px 18px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+
+}
+
+.main_content_divider_4{
+  height: 23.5%;
+  width: 100%;
+  background-color: #373131;
+  display: flex;
+  gap: 9px;
+  margin-top: 9px;
+}
+
+.box_4{
+  height: 100%;
+  width: 100%;
+  border-radius:  18px 18px 18px 18px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+}
+
+.secondary_content_area{
+  width: 30%;
+  height: 550px;
+  background-color: #373131;
+  margin-right: 8px;
+  border-radius: 18px;
+}
+
+.add_info_area_1{
+  background-color: #373131;;
+  width: 100%;
+  height: 221px;
+  border-radius: 18px;
+}
+
+.add_info_area_2{
+  margin-top: 9px;
+  background-color: #ff3131;
+  width: 100%;
+  height: 320px;
+  border-radius: 18px;
+  
+}
+
+.search_bar{
+  height: 95%;
+  width: 99.5%;
+  border: none;
+  border-radius: 17px;
+  font-size: 22px;
+  text-align-last: center;
+  font-family: monospace;
+}
+
+.image_display_area {
+  height: 100%;
+  width: 100%;
+  border-radius: 18px;
+  transition: filter 0.4s ease-in-out;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.description_h{
+  height: 25%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+
+}
+
+.description_b_container{
+  height: 75%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.description_b{
+  height: 75%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  text-align: center;
 }
